@@ -3676,14 +3676,16 @@ body.modal-open {
   margin: 8% auto 0;
 }
 .logo-name {
-  color: #e6e6e6;
+  /*color: #e6e6e6;*/
+  color: #E53827;
   font-size: 180px;
   font-weight: 800;
   letter-spacing: -10px;
   margin-bottom: 0px;
+  margin-left: -30px;
 }
 .middle-box h1 {
-  font-size: 170px;
+  font-size: 140px;
 }
 .wrapper .middle-box {
   margin-top: 140px;
@@ -5028,4 +5030,60 @@ body.skin-3 {
   .welcome-message {
     display: none;
   }
+}
+.zh-profile
+{
+  margin: 0 0 70px 0;
+}
+.refocus-sqrt
+{
+  width: 64px;
+  height: 64px;
+  background: #8E8E8E;
+  display: block;
+  color: #fff;
+  text-align: center;
+  line-height: 5;
+  margin: 160px auto 0;
+}
+.refocus-sqrt:hover
+{
+  color: #fff;
+  background: #a8a8a8;
+}
+.logo-bbdo
+{
+  height: 140px;
+  width: 100%;
+  background: #243746;
+  display: block;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 40px 0 0 20px;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: -3.8px;
+}
+.logo-bbdo:hover
+{
+  color: #a7b1c2;
+}
+.navbar-fixed-top, .navbar-static-top
+{
+  background: #F3F3F5;
+}
+.zh-wrapper
+{
+  overflow: hidden;
+}
+.zh-new-company
+{
+  background: #1AB293;
+  color: #fff;
+  margin: 0 15px 0 0;
+}
+.zh-new-company:hover
+{
+  color: #fff;
+  background: #18a689;
 }
