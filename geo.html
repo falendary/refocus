@@ -8,7 +8,6 @@
 <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
 <!-- Morris -->
 <link href="css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
-<link href="css/plugins/iCheck/custom.css" rel="stylesheet">
 <link href="css/animate.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <link href="css/zh-style.css" rel="stylesheet">
@@ -100,68 +99,129 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row table-options">
-                            <div class="col-sm-5 m-b-xs col-lg-6">
-                                <div class="row">
-                                    <a onclick="fnClickAddRow();" href="javascript:void(0);" class="btn btn-primary pull-left new-order">New Order</a>
-                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle zh-btn-default" aria-expanded="false">Action <span class="caret"></span></button>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 m-b-xs col-lg-2">
-                                <div data-toggle="buttons" class="btn-group">
-                                    <label class="btn btn-sm btn-white"> <input type="radio" id="option1" name="options"> Day </label>
-                                    <label class="btn btn-sm btn-white active"> <input type="radio" id="option2" name="options"> Week </label>
-                                    <label class="btn btn-sm btn-white"> <input type="radio" id="option3" name="options"> Month </label>
-                                </div>
-                            </div>
-                            <div class="col-sm-3 col-lg-3 col-lg-offset-1">
-                                <div class="input-group"><input type="text" placeholder="Search" class="input-sm form-control"> <span class="input-group-btn">
-                                    <button type="button" class="btn btn-sm btn-default zh-btn-default"><i class="fa fa-search"></i></button> </span></div>
-                            </div>
-                        </div>
                         <div class="row">
-                            <table class="table zh-table-1 zh-table-last-row">
+                            <table class="table zh-table-1">
                                 <thead>
                                     <tr>
-                                        <th><form action=""><input type="checkbox" class="i-checks" name="input[]"></form></th>
-                                        <th>Status</th>
-                                        <th>Campaigns<span class="grey-helper">ID</span></th>
-                                        <th>Won<span class="grey-helper">Win rate</span></th>
+                                        <th>Город</th>
                                         <th>Impressions</th>
                                         <th>Clicks<span class="grey-helper">CTR</span></th>
                                         <th>Conversions<span class="grey-helper">Revenue eCPA</span></th>
-                                        <th>Revenue<span class="grey-helper">Revenue eCPM</span></th>
-                                        <th>Daily budget</th>
-                                        <th>Lifetime budget</th>
-                                        <th>Banners</th>
+                                        <th>Revenue</th>
+                                        <th>Daily Budget</th>
+                                        <th>Lifetime Budget</th>
+                                        <th class="col-md-2 col-lg-1">
+                                            <form action="">
+                                                <div class="input-group">
+                                                    <input type="text" placeholder="Search" class="input-sm form-control"> 
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
+                                                    </span>
+                                                </div>
+                                            </form>
+                                        </th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><form action=""><input type="checkbox" class="i-checks" name="input[]"></form></td>
-                                        <td><button data-toggle="dropdown" class="btn btn-default pull-left zh-btn-default dropdown-toggle" aria-expanded="false">Active <span class="caret"></span></button><i class="status-circle green"></i></td>
-                                        <td>Retargeting 1st<span class="grey-helper">1503512</span></td>
-                                        <td>689<span class="grey-helper">214%</span></td>
-                                        <td>322,470</td>
-                                        <td>689<span class="grey-helper">0.214%</span></td>
+                                        <td>1. <i class="square-city square-blue"></i>Moscow</td>
+                                        <td>10, 04%</td>
+                                        <td>22,470</td>
+                                        <td>689<span class="grey-helper">1503512</span></td>
                                         <td>4,902<span class="grey-helper">руб 3.85</span></td>
-                                        <td>руб. 18,897.03<span class="grey-helper">руб 58.60</span></td>
-                                        <td>руб. 18,897.03</td>
-                                        <td>руб. 18,897.03</td>
-                                        <td>18</td>
+                                        <td>руб 18,897.03 <span class="grey-helper">руб 58,60</span></td>
+                                        <td>руб 18,897.03</td>
+                                        <td>руб 18,897.03</td>
                                     </tr>
                                     <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td class="resulted">322,470</td>
-                                        <td class="resulted">689</td>
-                                        <td class="resulted">4,902</td>
-                                        <td class="resulted">руб. 18,897.03</td>
-                                        <td class="resulted"></td>
-                                        <td class="resulted"></td>
-                                        <td class="resulted"></td>
+                                        <td>2. <i class="square-city square-green"></i>Saint Petersburg</td>
+                                        <td>10, 04%</td>
+                                        <td>22,470</td>
+                                        <td>689<span class="grey-helper">1503512</span></td>
+                                        <td>4,902<span class="grey-helper">руб 3.85</span></td>
+                                        <td>руб 18,897.03 <span class="grey-helper">руб 58,60</span></td>
+                                        <td>руб 18,897.03</td>
+                                        <td>руб 18,897.03</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3. <i class="square-city square-brown"></i>Novosibirsk</td>
+                                        <td>10, 04%</td>
+                                        <td>22,470</td>
+                                        <td>689<span class="grey-helper">1503512</span></td>
+                                        <td>4,902<span class="grey-helper">руб 3.85</span></td>
+                                        <td>руб 18,897.03 <span class="grey-helper">руб 58,60</span></td>
+                                        <td>руб 18,897.03</td>
+                                        <td>руб 18,897.03</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4. <i class="square-city square-yellow"></i>Ufa</td>
+                                        <td>10, 04%</td>
+                                        <td>22,470</td>
+                                        <td>689<span class="grey-helper">1503512</span></td>
+                                        <td>4,902<span class="grey-helper">руб 3.85</span></td>
+                                        <td>руб 18,897.03 <span class="grey-helper">руб 58,60</span></td>
+                                        <td>руб 18,897.03</td>
+                                        <td>руб 18,897.03</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5. <i class="square-city square-seablue"></i>(not set)</td>
+                                        <td>10, 04%</td>
+                                        <td>22,470</td>
+                                        <td>689<span class="grey-helper">1503512</span></td>
+                                        <td>4,902<span class="grey-helper">руб 3.85</span></td>
+                                        <td>руб 18,897.03 <span class="grey-helper">руб 58,60</span></td>
+                                        <td>руб 18,897.03</td>
+                                        <td>руб 18,897.03</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6. <i class="square-city square-lime"></i>Yakaterinburg</td>
+                                        <td>10, 04%</td>
+                                        <td>22,470</td>
+                                        <td>689<span class="grey-helper">1503512</span></td>
+                                        <td>4,902<span class="grey-helper">руб 3.85</span></td>
+                                        <td>руб 18,897.03 <span class="grey-helper">руб 58,60</span></td>
+                                        <td>руб 18,897.03</td>
+                                        <td>руб 18,897.03</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7. <i class="square-city square-orange"></i>Krasnodar</td>
+                                        <td>10, 04%</td>
+                                        <td>22,470</td>
+                                        <td>689<span class="grey-helper">1503512</span></td>
+                                        <td>4,902<span class="grey-helper">руб 3.85</span></td>
+                                        <td>руб 18,897.03 <span class="grey-helper">руб 58,60</span></td>
+                                        <td>руб 18,897.03</td>
+                                        <td>руб 18,897.03</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8. <i class="square-city square-lemon"></i>Perm</td>
+                                        <td>10, 04%</td>
+                                        <td>22,470</td>
+                                        <td>689<span class="grey-helper">1503512</span></td>
+                                        <td>4,902<span class="grey-helper">руб 3.85</span></td>
+                                        <td>руб 18,897.03 <span class="grey-helper">руб 58,60</span></td>
+                                        <td>руб 18,897.03</td>
+                                        <td>руб 18,897.03</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9. <i class="square-city square-lightblue"></i>Vladivostok</td>
+                                        <td>10, 04%</td>
+                                        <td>22,470</td>
+                                        <td>689<span class="grey-helper">1503512</span></td>
+                                        <td>4,902<span class="grey-helper">руб 3.85</span></td>
+                                        <td>руб 18,897.03 <span class="grey-helper">руб 58,60</span></td>
+                                        <td>руб 18,897.03</td>
+                                        <td>руб 18,897.03</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10. <i class="square-city square-grey"></i>Chelyabinsk</td>
+                                        <td>10, 04%</td>
+                                        <td>22,470</td>
+                                        <td>689<span class="grey-helper">1503512</span></td>
+                                        <td>4,902<span class="grey-helper">руб 3.85</span></td>
+                                        <td>руб 18,897.03 <span class="grey-helper">руб 58,60</span></td>
+                                        <td>руб 18,897.03</td>
+                                        <td>руб 18,897.03</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -199,8 +259,6 @@
     <!-- Custom and plugin javascript -->
     <script src="js/inspinia.js"></script>
     <script src="js/plugins/pace/pace.min.js"></script>
-    <!-- iCheck -->
-    <script src="js/plugins/iCheck/icheck.min.js"></script>
 
     <!-- jQuery UI -->
     <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
@@ -220,11 +278,6 @@
     
     <script>
         $(document).ready(function() {
-            $('.i-checks').iCheck({
-                checkboxClass: 'icheckbox_square-green',
-                radioClass: 'iradio_square-green',
-            });
-
             var mapData = {
                 "US": 298,
                 "SA": 200,

@@ -1,3 +1,10 @@
+/*От гео карт, добавляет высоту, начинает все дергаться, если будет проблема с свгшной картой
+ то смело стирайте это правило, но есть вероятность что сново будет дергаться все*/
+.jvectormap-label
+{
+	/*Импортант для того чтобы перебить атрибут*/
+	display: none !important;
+}
 .footer
 {
 	margin-top: -38px;
@@ -19,10 +26,65 @@ html, body
 body
 {
 	height: 100%;
+	background: #f1f1f1;
+}
+.logo-sidebar-holder
+{
+	text-align: center;
+	background: #fff;
+	line-height: 1;
+	position: relative;
+	right: -1px;
+	border-right: 1px solid #fff;
+}
+.logo-sidebar
+{
+	color: #F33920;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 6rem;
+	letter-spacing: -7px;
+}
+.logo-sidebar:hover
+{
+	color: #F93920;
+}
+.navbar-default .nav > li > a:hover, .navbar-default .nav > li > a:focus
+{
+	background-color: #1AB7A4;
+	color: #f1f1f1;
+}
+.nav.nav-second-level.collapse.in li>a
+{
+	color: #f1f1f1;
+}
+.nav > li.active
+{
+	background-color: #1AB7A4; 
+}
+.nav > li > a:hover
+{
+	color: #f1f1f1;
+}
+.nav > li > a > .fa.arrow:before
+{
+	content: "\f0da";
+}
+.nav > li.active > a > .fa.arrow:before
+{
+	content: "\f0d7";
+}
+#page-wrapper
+{
+	border-left: 1px solid #E0E0E0;
 }
 #wrapper
 {
 	height: 100%;
+}
+.white-bg
+{
+	background: #fff;
 }
 table.zh-table-1 span.grey-helper
 {
@@ -43,3 +105,128 @@ table.zh-table-1>thead
 			border: 1px solid #E5E5E5;		
 		}
 
+
+span.grey-helper
+{
+	display: block;
+	color: #B1B1AF;
+}
+.square-city
+{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-left: .5rem;
+	margin-right: .5rem;
+	background-color: transparent;
+}
+.square-city.square-blue		{background-color: #28829D;}
+.square-city.square-green		{background-color: #57A83F;}
+.square-city.square-brown		{background-color: #CB6139;}
+.square-city.square-yellow		{background-color: #E8E935;}
+.square-city.square-seablue		{background-color: #42BFC5;}
+.square-city.square-lime		{background-color: #80D989;}
+.square-city.square-orange		{background-color: #E0A273;}
+.square-city.square-lemon		{background-color: #F5F287;}
+.square-city.square-lightblue	{background-color: #7BEEC7;}
+.square-city.square-grey		{background-color: #BFD9E8;}
+
+header.section-header
+{
+	background-color: #f1f1f1;
+	border: 1px solid #E0E0E0;
+	border-radius: 3px;
+	/*Начинаем убивать bootstrap*/
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-left: -40px;
+	margin-right: -40px;
+	margin-top: -4px;
+}
+.section-header h2
+{
+	/*И даже здесь делаем ужасные вещи с бутстрапом*/
+	margin-left: -30px;
+	margin-top: 10px;
+	font-size: 2rem;
+}
+.section-header h2 i
+{
+	font-size: 2rem;
+}
+main.section-body
+{
+	/*Продолжаем убивать бутстрап*/
+	margin-right: -40px;
+	padding-right: 40px;
+	border-right: 1px solid #E0E0E0;
+}
+.zh-chart-holder
+{
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+.options-holder
+{
+	padding-top: 3px;
+}
+.table-options
+{
+	background-color: #f1f1f1;
+	border: 1px solid #e0e0e0;
+	padding-top: 5px;
+	padding-left: 5px;
+	border-bottom: 0;
+}
+.table-options .btn-default
+{
+	margin-top: 2px;
+	margin-left: 1rem;
+	padding: 4px 10px;
+} 
+.new-order
+{
+	border-color: #558E59;
+	background-color: #558E59; 
+}
+table.zh-table-1>thead>tr>th:first-child form
+{
+	width: 22px;
+	margin: 0 auto;
+}
+table.zh-table-1>tbody>tr>td:first-child form
+{
+	width: 22px;
+	margin: 0 auto;
+}
+.status-circle
+{
+	width: 1.5rem;
+	display: inline-block;
+	height: 1.5rem;
+	margin: .8rem;
+	border-radius: 50%;
+}
+.status-circle.green
+{
+	background-color: #17A841;
+}
+.zh-btn-default
+{
+	border-color: #e0e0e0;
+	background-color: #F3F3F3;
+	color: #1F1F1F;
+}
+.zh-table-last-row>tbody>tr:last-child
+{
+	background-color: #F1F1F1;
+}
+.zh-table-last-row>tbody>tr:last-child td
+{
+	border: 0;
+	font-weight: bold;
+}
+.zh-table-last-row>tbody>tr:last-child td.resulted
+{
+	border: 1px solid #e0e0e0;
+}
