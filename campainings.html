@@ -87,16 +87,9 @@
                     </header>
                     <main class="section-body">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="zh-chart-holder">
-                                    <div class="flot-chart">
-                                        <div class="flot-chart-pie-content" id="flot-pie-chart"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-9">
-                                <div class="zh-chart-holder">
-                                    <div id="world-map" style="height: 300px;"></div>
+                                       <div id="chartdiv" style="width: 100%; height: 400px; " ></div>
                                 </div>
                             </div>
                         </div>
@@ -217,9 +210,100 @@
 
     <!-- Sparkline demo data  -->
     <script src="js/demo/sparkline-demo.js"></script>
+    <script src="js/amcharts/amcharts.js"></script>
+    <script src="js/amcharts/serial.js"></script>
     
     <script>
         $(document).ready(function() {
+            AmCharts.makeChart("chartdiv",
+                {
+                    "type": "serial",
+                    "pathToImages": "http://cdn.amcharts.com/lib/3/images/",
+                    "categoryField": "date",
+                    "dataDateFormat": "YYYY-MM-DD",
+                    "autoMarginOffset": 40,
+                    "marginRight": 60,
+                    "marginTop": 60,
+                    "fontSize": 13,
+                    "theme": "default",
+                    "categoryAxis": {
+                        "parseDates": true
+                    },
+                    "chartCursor": {},
+                    "chartScrollbar": {},
+                    "trendLines": [],
+                    "graphs": [
+                        {
+                            "columnWidth": 0.44,
+                            "cornerRadiusTop": 8,
+                            "dashLength": 4,
+                            "fillAlphas": 0.51,
+                            "id": "AmGraph-1",
+                            "lineAlpha": 0.44,
+                            "title": "graph 1",
+                            "type": "column",
+                            "valueField": "column-1"
+                        },
+                        {
+                            "bullet": "square",
+                            "bulletBorderAlpha": 1,
+                            "bulletBorderThickness": 1,
+                            "bulletSize": 16,
+                            "id": "AmGraph-2",
+                            "lineThickness": 3,
+                            "title": "graph 2",
+                            "valueField": "column-2"
+                        }
+                    ],
+                    "guides": [],
+                    "valueAxes": [
+                        {
+                            "id": "ValueAxis-1",
+                            "title": ""
+                        }
+                    ],
+                    "allLabels": [],
+                    "balloon": {},
+                    "titles": [],
+                    "dataProvider": [
+                        {
+                            "date": "2014-03-01",
+                            "column-1": 8,
+                            "column-2": 5
+                        },
+                        {
+                            "date": "2014-03-02",
+                            "column-1": 6,
+                            "column-2": 7
+                        },
+                        {
+                            "date": "2014-03-03",
+                            "column-1": 2,
+                            "column-2": 3
+                        },
+                        {
+                            "date": "2014-03-04",
+                            "column-1": 1,
+                            "column-2": 3
+                        },
+                        {
+                            "date": "2014-03-05",
+                            "column-1": 2,
+                            "column-2": 1
+                        },
+                        {
+                            "date": "2014-03-06",
+                            "column-1": 3,
+                            "column-2": 2
+                        },
+                        {
+                            "date": "2014-03-07",
+                            "column-1": 6,
+                            "column-2": 8
+                        }
+                    ]
+                }
+            );
             $('.i-checks').iCheck({
                 checkboxClass: 'icheckbox_square-green',
                 radioClass: 'iradio_square-green',
