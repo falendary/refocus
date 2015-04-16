@@ -115,11 +115,11 @@ table.zh-table-1>thead
 		}
 .table.table-striped td
 {
-	text-align: center;
+	vertical-align: middle;
 }
 .table.table-striped th
 {
-	text-align: center;
+	vertical-align: middle;
 }
 .table.table-striped th span
 {
