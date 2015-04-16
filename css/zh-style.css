@@ -95,6 +95,10 @@ table.zh-table-1 span.grey-helper
 {
 	display: block;
 }
+table.zh-table-1 td
+{
+	text-align: center;
+}
 table.zh-table-1>thead
 {
 	background-color: #F1F1F1;
@@ -109,8 +113,22 @@ table.zh-table-1>thead
 		{
 			border: 1px solid #E5E5E5;		
 		}
-
-
+.table.table-striped td
+{
+	text-align: center;
+}
+.table.table-striped th
+{
+	text-align: center;
+}
+.table.table-striped th span
+{
+	font-weight: normal;
+}
+.m-l-10
+{
+	margin-left: 10px;
+}
 span.grey-helper
 {
 	display: block;
@@ -256,7 +274,7 @@ table.zh-table-1>tbody>tr>td:first-child form
 {
 	color: #c5c9cc;
 	display: inline-block;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	margin-right: .5rem;
 }
 .button-play:hover, .button-pause:hover, .button-stop:hover
