@@ -42,8 +42,12 @@ body
 	width: 100%;
 	height: 100%;
 	box-sizing: border-box;
-	padding: 65px 0 0 23px;
+	padding: 65px 23px 0 23px;
 	display: block;
+}
+.logo-sidebar img
+{
+	width: 100%;
 }
 .logo-sidebar:hover
 {
@@ -75,7 +79,11 @@ body
 	content: "\f0d7";
 }*/
 
-.nav > li > a .fa
+/*.nav > li > a .fa
+{
+	display: none;
+}*/
+.nav > li > a .fa.arrow
 {
 	display: none;
 }
